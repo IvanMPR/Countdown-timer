@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 3rem 0;
+}
+
+p {
+  margin-top: 8rem;
+  text-align: center;
+  font-size: 4rem;
+}
+
+span {
+  font-size: 4rem;
+}
+
+form {
+  margin: 3rem 0 0 5rem;
+  text-align: center;
+}
+
+input {
+  padding: 0.5rem 1rem;
+  width: 10rem;
+}
+form > :not(:last-child) {
+  margin-right: 5rem;
+}
+
+.buttons {
+  margin-top: 3rem;
+  margin-right: 5rem;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.5rem 2rem;
+  border: 1px solid #333;
+  color: #333;
+  transition: all 0.2s;
+  display: inline-block;
+}
+
+a:hover {
+  color: #fff;
+  background-color: #333;
+}
+
+a:active {
+  transform: translateY(2px);
+}
+
+.start {
+  margin-right: 5rem;
+}
