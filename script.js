@@ -34,7 +34,6 @@ function startTimer() {
     clearInputs();
     return;
   }
-
   // //////////////////////////////////////////////////////
   const hoursInputValue =
     hoursInput.value === '' ? 0 : +hoursInput.value * 3600;
