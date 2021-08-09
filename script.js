@@ -34,6 +34,7 @@ function startTimer() {
     clearInputs();
     return;
   }
+
   // //////////////////////////////////////////////////////
   const hoursInputValue =
     hoursInput.value === '' ? 0 : +hoursInput.value * 3600;
@@ -66,14 +67,17 @@ function startTimer() {
     // //////////////////////////////////////////////////////////////////////
     if (total === -1) {
       clearInterval(timer);
+      btnStart.style.pointerEvents = 'auto';
     }
   }, 1000);
+  btnStart.style.pointerEvents = 'none';
   // /////////////////////////////////////////////////////////
   btnReset.addEventListener('click', () => {
     clearInterval(timer);
     clearInputs();
     outputP.textContent = `00 : 00 : 00`;
     total = 0;
+    btnStart.style.pointerEvents = 'auto';
   });
 }
 // /////////////////////////////////////////////////////////
